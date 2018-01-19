@@ -4,10 +4,10 @@ defmodule CVWeb.LayoutView do
     def js_script_tag do
     if Mix.env == :prod do
       # In production we'll just reference the file
-      "<script src=\"/js/app.js\"></script>"
+      "<script src=\"/js/app.jsx\"></script>"
     else
       # In development mode we'll load it from our webpack dev server
-      "<script src=\"http://localhost:4000/js/app.js\"></script>"
+      "<script src=\"http://localhost:4000/js/app.jsx\"></script>"
     end
   end
 

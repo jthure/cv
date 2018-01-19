@@ -1,0 +1,35 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+h1 {
+    color: white
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  .selectlang{
+    position: absolute;
+    right: 0;
+  }
+  &-background{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+
+  }
+}
